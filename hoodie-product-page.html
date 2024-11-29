@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carleton Esports Hoodie</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: white;
+            color: black;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .product-container {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+        }
+        .product-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 500px;
+        }
+        .product-main-image {
+            width: 100%;
+            border: none;
+            /* border: 1px solid #333;
+            border-radius: 8px; */
+            object-fit: cover;
+        }
+        .product-thumbnails {
+            display: flex;
+            gap: 10px;
+        }
+        .product-thumbnail {
+            width: 80px;
+            height: 80px;
+            /* border: 1px solid #333;
+            border-radius: 4px; */
+            border: none;
+            object-fit: cover;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+        .product-thumbnail:hover, .product-thumbnail.active {
+            opacity: 1;
+        }
+        .product-details {
+            flex: 1;
+        }
+        .price {
+            color: red;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .checkout-btn {
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .checkout-btn:hover {
+            background-color: darkred;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .product-description, .product-features {
+            margin-bottom: 20px;
+        }
+        .product-features {
+            /* padding-left: 20px; */
+        }
+        .sizing-chart {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .sizing-chart-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .sizing-chart-image {
+            max-width: 200px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .sizing-chart-image:hover {
+            transform: scale(1.05);
+        }
+        .reviews {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid black;
+        }
+        .review {
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #333;
+        }
+        ul{
+            padding-left: 15px;
+        }
+        @media (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .sizing-chart-images {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-gallery">
+            <img src="05sqfpth.png" alt="Carleton Esports Hoodie" class="product-main-image" id="mainImage">
+            <div class="product-thumbnails">
+                <img src="05sqfpth.png" alt="Hoodie Thumbnail 1" class="product-thumbnail active" onclick="changeImage(this)">
+                <img src="S7WUyvU.png" alt="Hoodie Thumbnail 2" class="product-thumbnail" onclick="changeImage(this)">
+                <img src="CuEQdks.png" alt="Hoodie Thumbnail 3" class="product-thumbnail" onclick="changeImage(this)">
+            </div>
+        </div>
+        
+        <div class="product-details">
+            <h1>Carleton Esports Hoodie</h1>
+            <p class="price">$45.00</p>
+            
+            <div class="product-description">
+                <h2>Product Description</h2>
+                <p>Experience ultimate comfort with our Carleton Esports Hoodie. Made from premium soft-touch cotton blend, this hoodie offers warmth, style, and unmatched eSports Swag!</p>
+            </div>
+            
+            <div class="product-features">
+                <h3>Features:</h3>
+                <ul>
+                    <li>Embroided Logo</li>
+                    <li>Sizeable Hood To Stay Cozy</li>
+                    <li>Kangaroo Front Pocket</li>
+                    <li>Color: Charcoal Black</li>
+                </ul>
+            </div>
+            
+            <button class="checkout-btn" onclick="window.open('https://buy.stripe.com/14kaGJgLW06HgHC5kl', '_blank')">
+                Proceed to Checkout
+            </button>
+
+            <div class="sizing-chart">
+                <h3>Sizing Chart</h3>
+                <div class="sizing-chart-images">
+                    <img src="S7WUyvU.png" alt="Sizing Chart 1" class="sizing-chart-image" onclick="openFullImage(this)">
+                    <img src="CuEQdks.png" alt="Sizing Chart 2" class="sizing-chart-image" onclick="openFullImage(this)">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="reviews">
+        <h2>Customer Reviews</h2>
+        
+        <div class="review">
+            <h3>Skroob (Community Member OTY 2024) ★★★★☆</h3>
+            <p>"It's great! Could be a little thicker tho ngl..."</p>
+        </div>
+        
+        <div class="review">
+            <h3>Sahal (Competitive Head of Valorant) ★★★★★</h3>
+            <p>"It's nice."</p>
+        </div>
+    </div>
+
+    <script>
+        function changeImage(thumbnail) {
+            // Remove active class from all thumbnails
+            document.querySelectorAll('.product-thumbnail').forEach(t => t.classList.remove('active'));
+            
+            // Add active class to clicked thumbnail
+            thumbnail.classList.add('active');
+            
+            // Change main image source
+            document.getElementById('mainImage').src = thumbnail.src;
+        }
+
+        function openFullImage(image) {
+            window.open(image.src, '_blank');
+        }
+    </script>
+</body>
+</html>
