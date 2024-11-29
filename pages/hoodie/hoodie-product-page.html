@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carleton Esports Hoodie</title>
+    <link rel="icon" type="image/x-icon" href="../../media/logo.ico">
+    <link rel="stylesheet" href="hoodie-product-page.css">
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-gallery">
+            <img src="../../media/05sqfpth.png" alt="Carleton Esports Hoodie" class="product-main-image" id="mainImage">
+            <div class="product-thumbnails">
+                <img src="../../media/05sqfpth.png" alt="Hoodie Thumbnail 1" class="product-thumbnail active" onclick="changeImage(this)">
+                <img src="../../media/CuEQdks.png" alt="Hoodie Thumbnail 3" class="product-thumbnail" onclick="changeImage(this)">
+            </div>
+        </div>
+        
+        <div class="product-details">
+            <h1>Carleton Esports Hoodie</h1>
+            <p class="price">$44.99</p>
+            
+            <div class="product-description">
+                <h2>Product Description</h2>
+                <p>Game in style and comfort with the Carleton Esports Hoodie, designed for fans and players alike. Made from a premium cotton-poly blend, this hoodie features a sleek, modern fit and breathable fabric, perfect for staying warm during those late-night gaming sessions. Show off your Carleton pride with the bold Esports logo prominently displayed on the chest and customizable player tags on the back. Whether you're competing in tournaments or watching from the sidelines, this hoodie is the ultimate blend of fashion and functionality.</p>
+            </div>
+            
+            <div class="product-features">
+                <h3>Features:</h3>
+                <ul>
+                    <li>Embroided Logo</li>
+                    <li>Sizeable Hood To Stay Cozy</li>
+                    <li>Kangaroo Front Pocket</li>
+                    <li>Color: Charcoal Black</li>
+                </ul>
+            </div>
+            
+            <button class="checkout-btn" onclick="window.open('https://buy.stripe.com/14kaGJgLW06HgHC5kl', '_blank')">
+                Proceed to Checkout
+            </button>
+
+            <div class="sizing-chart">
+                <h3>Sizing Chart</h3>
+                <div class="sizing-chart-images">
+                    <img src="../../media/CuEQdks.png" alt="Sizing Chart 2" class="sizing-chart-image" onclick="openFullImage(this)">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="reviews">
+        <h2>Customer Reviews</h2>
+        
+        <div class="review">
+            <h3>Skroob (Community Member OTY 2024) ★★★★☆</h3>
+            <p>"It's great! Could be a little thicker tho ngl..."</p>
+        </div>
+        
+        <div class="review">
+            <h3>Sahal (Competitive Head of Valorant) ★★★★★</h3>
+            <p>"It's nice."</p>
+        </div>
+    </div>
+    <script src="hoodie-product-page.js"></script>
+</body>
+</html>
