@@ -213,6 +213,10 @@ body, html {
   }
 }
 
+.linktree {
+  cursor: pointer;
+}
+
 .shopContainer {
   width: 50%;
   margin: 0 auto;
