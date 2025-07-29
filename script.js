@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
     var text = document.querySelector('#cu-esports-overlay h1');
     var subText = document.querySelector('#cu-esports-overlay p');
-    text.style.transition = "opacity 2s";
-    subText.style.transition = "opacity 2s";
+    text.style.transition = "opacity 1s";
+    subText.style.transition = "opacity 1s";
     text.style.opacity = 0;
     subText.style.opacity = 0;
 
     var overlay = document.getElementById('cu-esports-overlay');
-    overlay.style.transition = "opacity 2s";
+    overlay.style.transition = "opacity 1s";
     overlay.style.opacity = 0;
 
     overlay.addEventListener('transitionend', function() {
